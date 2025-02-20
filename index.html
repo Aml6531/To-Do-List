@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO List</title>
+
+  <!--fontawesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link href="vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--CSS-->
+  <link href="style/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+  <div>
+    <div class="to-do">
+      <h5 class="text-center">TO-DO List <i class="fa-solid fa-pen"></i></h5>
+
+      <div class="input input-group row ">
+
+        <div>
+          <input type="text" class="form-control" id="input-box" placeholder="Enter a task...">
+          <button id="clear" class="clear" onclick="clearInput()"><i class="fa-duotone fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <button class="add-button" type="button" onclick="addTask()">Add Task</button>
+        </div>
+
+      </div>
+
+      <div>
+        <ul id="list-container">
+
+        </ul>
+        <div class="d-flex justify-content-evenly buttons d-none" id="buttons">
+          <button class="check-all" onclick="checkAll()">Check All </button>
+          <button class="clear-all" onclick="clearAll()">Clear All</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+  <script src="vendor/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
